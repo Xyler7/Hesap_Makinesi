@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/editTxtBirinciSayi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Birinci Sayiyi Gir"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtIkinciSayi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/editTxtIkinciSayi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="424dp"
+        android:text="İkinci Sayiyi Gir"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTopla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:onClick="btnHesapla"
+        android:text="TOPLA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnBolme"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtIkinciSayi" />
+
+    <Button
+        android:id="@+id/btnCikar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:onClick="btnHesapla"
+        android:text="Cikar"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopla" />
+
+    <Button
+        android:id="@+id/btnCarpma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:onClick="btnHesapla"
+        android:text="CARP"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btnCikar"
+        app:layout_constraintTop_toBottomOf="@+id/btnBolme" />
+
+    <Button
+        android:id="@+id/btnBolme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        android:onClick="btnHesapla"
+        android:text="Bol"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btnCikar"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtIkinciSayi" />
+
+    <TextView
+        android:id="@+id/txtSonuc"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:text="SONUC:"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCarpma"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="@+id/btnCikar"
+        app:layout_constraintTop_toBottomOf="@+id/btnCikar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
